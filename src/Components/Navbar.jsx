@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/Navbar/logo.png"; // Assuming your logo is saved as logo.png in the assets folder
+// import Logo from "../assets/Navbar/logo.png"; // Temporarily disabled logo import
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,13 +8,16 @@ const Navbar = () => {
     <nav className="bg-[#333333] shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-24">
-          {/* Logo */}
+          {/* Logo placeholder */}
           <div className="flex-shrink-0 flex items-center">
-            <img
+            {/* <img
               src={Logo}
               alt="G Real Estate Logo"
-              className="h-20 w-auto p-2" // Adjusted height and added padding
-            />
+              className="h-20 w-auto p-2"
+            /> */}
+            <span className="text-green-300 font-bold text-xl">
+              G Real Estate
+            </span>
           </div>
 
           {/* Desktop Menu */}
